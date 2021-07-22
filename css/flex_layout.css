@@ -1,0 +1,351 @@
+@charset "UTF-8";
+/*
+CIAT: ASD170 Front-End Web Development
+Assignment:  Final Project Website
+Author: Felicito Rustique Jr.
+Date:   09 July 2021
+*/
+@font-face {  
+	font-family: Iceberg;  /*importing font to use*/
+	src: url('../Assets/Iceberg-Regular.ttf'); 
+}
+
+/* ===================================================
+					Base Styles
+   ===================================================
+*/
+
+/*make body a flexbox */
+
+body {
+	display: -webkit-box;  
+	display: -moz-box;  
+	display: -ms-flexbox;  
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	font-family: Iceberg;
+	font-size: 2vw;
+	color: #FFFFFF;
+	background-color:#323232;
+	background-image: url("../Assets/LightSplatter_BG.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+    padding: 0px;
+    border: 0px;
+	margin: 0px;
+}
+
+header {
+	width: 100%;
+	height: 400px;/*the height of STISL_HEADER500px.png graphic is 424px*/
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../Assets/STISL_HEADER500px.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: contain;
+	z-index: 99;/*element with greater z-index number goes on top others*/
+}
+
+nav {
+	width: 100%;
+	float: left;
+}
+
+nav ul#naviconList {
+	list-style-type: none;
+	padding-left: 5px;
+}
+
+nav a {
+	color: #FFFFFF;
+}
+
+nav img {
+	float: left;
+}
+
+nav .socialButton {
+	max-width: 50px;
+	margin-right: 3px;
+}
+
+#flexbox {
+	width: 100%;
+	margin: 0px;
+	display: -webkit-box;  
+	display: -moz-box;  
+	display: -ms-flexbox;  
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.first {
+	width: 210px;
+	height: 500px;
+	background-image: url("../Assets/STISL_STREAK_BG.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	z-index: 1;
+}
+
+.second {
+	width: 600px;
+	height: 500px;
+	z-index: 1;
+}
+
+.third {
+	width: 210px;
+	height: 500px;
+	background-image: url("../Assets/STISL_ShadowMan.png");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	z-index: 1;
+}
+
+#shadowSTISL {
+	width: 309px;
+	height: 500px;
+	margin-top: -100px; 
+	background-image: url("../Assets/STISL_ShadowMan.png");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	z-index: 1;
+}
+
+#aboutSection {
+	width: 600px;
+	height: auto;
+	z-index: 1;
+	align-self: flex-start; /*aligns a single item out of a line of flex items to start of cross axis*/
+}
+
+#aboutHeader {
+	font-size: 18pt;
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p#aboutText {
+	color: white;
+	font-size: 14pt;
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a[href="mailto: stisl.one@gmail.com"] {
+	color: white;
+}
+
+#graphixSection {
+	width: 600px;
+	height: 1250px;
+	margin-top: 0px;
+	z-index: 1;
+}
+
+#graphixHeader {
+	font-size: 22pt;
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#graphixThumbBox {
+	width: 600px;
+	height: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: #1D1D1D;
+	z-index: 1;
+}
+
+#graphixDisplay {
+	display: block;
+	position: relative;
+	width: 600px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+}
+
+#traxSection {
+	width: 600px;
+	height: 900px;
+	margin-top: 0px;
+	z-index: 1;
+}
+
+#traxHeader {
+	font-size: 22pt;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#traxThumbBox {
+	width: 600px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	overflow: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	background-color: #1D1D1D;
+	z-index: 1;
+}
+
+.traxYouTubePlayer { 
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	max-width: 600px;
+	margin: 0px;
+	padding: 0px;
+	/*visibility: hidden;*/
+}
+
+#traxDisplay {
+	display: block;
+	position: relative;
+	width: 600px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+}
+
+#vidzSection {
+	width: 600px;
+	height: 900px;
+	margin-top: 0px;
+	z-index: 1;
+}
+
+#vidzHeader {
+	font-size: 22pt;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#vidzThumbBox {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	overflow: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	background-color: #1D1D1D;
+	z-index: 1;
+}
+
+#vidzThumbBox img, img:hover {
+	display: inline-block; 
+	max-width: 200px;
+	padding: 0px; 
+	cursor: pointer;
+}
+
+#vidzThumbBox img:hover {
+	opacity: 0.50;
+}
+
+.vidzYouTubePlayer { 
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	/*visibility: hidden;*/
+}
+
+#vidzDisplay {
+	display: block;
+	position: relative;
+	width: 600px;
+	height: 315px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+}
+
+footer {
+	width:100%;
+	height: 40px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	background-color:#0A0A0A;
+	background-image: url("../Assets/STISL_FOOTER3.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	-webkit-order: 100; order: 100;
+}
+
+footer > p {
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 12px;
+	z-index: 99;
+}
+
+
+/* ============================================
+	Devices: 0 - 600 pixels
+   ============================================
+*/
+@media only screen and (max-width: 610px) {
+header {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../Assets/STISL_HEADER500px.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size:cover;
+	z-index: 99;/*element with greater z-index number goes on top others*/
+	}
+}
+/* ============================================
+	Devices: 0 - 1020 pixels
+   ============================================
+*/
+@media only screen and (max-width: 1020px) {
+
+	.second {-webkit-order: 1; order: 1;}
+	.first {-webkit-order: 2; order: 2;}
+	.third {-webkit-order: 3; order: 3;}
+}
+
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 1020 pixels
+   ===================================================
+*/
+@media only screen and (min-width: 1021px) {
+
+	.first {-webkit-order: 1; order: 1;}		
+	.second {-webkit-order: 2; order: 2;}
+	.third {-webkit-order: 3; order: 3;}
+	}

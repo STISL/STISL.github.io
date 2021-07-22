@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+	CIAT: ASD170 Front-End Web Development
+	Assignment:  Final Project Website
+    Author: Felicito Rustique Jr.
+    Date:   09 July 2021
+   -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--this line makes page compatible with Edge-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<link rel="stylesheet" href="css/reset.css" media="all">-->
+<link rel="stylesheet" href="css/flex_layout.css" media="screen">
+<link rel="stylesheet" href="css/stisl_navicon.css" media="screen">
+<script src="js/vidzGallery.js" async></script>
+<title>STISL-VIDZ</title>
+</head>
+<!--This is the HOME page. Header will contain a background-graphic used on all pages and the body will have a light background with slight splatter marks.-->	
+<body>
+	<header>
+		<nav><!--navigation links will be a navicon-->
+			<a id="navicon" href="#"><img src="Assets/STISL_navicon_white.png" alt=""></a>
+			<ul id="naviconList">
+			<a href="index.html"><li>home</li></a>
+			<a href="about.html"><li>about</li></a>
+			<a href="graphix.html"><li>graphix</li></a>
+			<a href="trax.html"><li>trax</li></a>
+			<!--<a href="vids.html"><li>vids</li></a>
+			<!--<a href="codery.html"><li>codery</li></a>-->
+			<a href="https://www.dvidshub.net/search?q=rustique&view=grid"><li>navy</li></a>
+			<a href="https://www.stislx.com"><li>merch</li></a>
+			</ul>
+			<a href="https://www.instagram.com/stisl.one">
+			<img id="instaButton" class="socialButton" src="Assets/InstaIcon_WhiteOutline.png" alt="instaIcon">
+			</a>
+			<a href="https://www.youtube.com/channel/UCtyQOgApco-1_jHgUexeOmQ">
+			<img id="ytButton" class="socialButton" src="Assets/YouTubeIcon_WhiteOutline.png" alt="youTubeIcon">
+			</a>
+		</nav>
+	</header>
+<!--div container will be a flex box with 3 section row wrapping-->	
+<div id="flexbox">
+	<!--<section class="first"></section>-->
+	<section id="vidzSection" class="second"><!--600px wide-->
+	<h3 id="vidzHeader">VIDZ FOOLERY
+	<br>
+	<span style="font-size: 14pt; letter-spacing: 1pt; font-style: italic">Software: Adobe After Effects &#38; Premiere</span></h3>
+	<div id="vidzThumbBox">
+		<img id="vidzThumb_1" onclick="switchVid()" src="Vidz/STISL_BlastOff_Thumbnail.png" alt="STISL_BlastOff_Thumbnail.png">
+		<img id="vidzThumb_2" onclick="switchVid()" src="Vidz/STISL_GIJoeReplica_Thumbnail.png" alt="GIJoeReplica_Thumbnail.png">
+		<img id="vidzThumb_3" onclick="switchVid()" src="Vidz/STISL_Glitcher_Thumbnail.png" alt="Glitcher_Thumbnail.png">
+		<img id="vidzThumb_4" onclick="switchVid()" src="Vidz/STISL_Terminate_Thumbnail.png" alt="Terminate_Thumbnail.png">
+		<img id="vidzThumb_5" onclick="switchVid()" src="Vidz/STISL_Waves_Thumbnail.png" alt="Waves_Thumbnail.png">
+		<img id="vidzThumb_6" onclick="switchVid()" src="Vidz/ZLINE_Thumbnail.jpg" alt="ZLINE_Thumbnail.jpg">
+	</div>
+	<div id="vidzDisplay" alt="600pxImage">
+	<video id="vidShown" class="vidz" width="600" height="315" controls autoplay loop><source src="Vidz/STISL_BlastOff.mp4" type="video/mp4"></video>
+	<!--<video id="video2" class="vidz" width="600" height="315" controls><source src="Vidz/STISL_GIJoeReplica.mp4" type="video/mp4"></video>
+	<video id="video3" class="vidz" width="600" height="315" controls><source src="Vidz/STISL_Glitcher.mp4" type="video/mp4"></video>
+	<video id="video4" class="vidz" width="600" height="315" controls><source src="Vidz/STISL_Terminate.mp4" type="video/mp4"></video>
+	<video id="video5" class="vidz" width="600" height="315" controls><source src="Vidz/STISL_Waves.mp4" type="video/mp4"></video>
+	<iframe id="video6" class="vidzYouTubePlayer" width="600" height="315" src="https://www.youtube.com/embed/videoseries?list=PLLTJQKCxJsKuuj1PX-m6eH_Hq3n3lo6x1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+	</div>
+	</section>
+	<!--<section id="shadowSTISL" class="third"></section>-->
+</div><!--close out flexbox-->	
+<!--The footer will have a backgroud graphic used on all pages, with the copyright notice centered within-->
+	<footer>
+		<p>Copyright &copy; 2021 &middot; All Rights Reserved &middot; STISL</p>
+	</footer>
+
+</body>
+</html>

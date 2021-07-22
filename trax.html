@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+	CIAT: ASD170 Front-End Web Development
+	Assignment:  Final Project Website
+    Author: Felicito Rustique Jr.
+    Date:   09 July 2021
+   -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--this line makes page compatible with Edge-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<link rel="stylesheet" href="css/reset.css" media="all">-->
+<link rel="stylesheet" href="css/flex_layout.css" media="screen">
+<link rel="stylesheet" href="css/stisl_navicon.css" media="screen">
+<script src="js/traxGallery.js" async></script>
+<title>STISL-TRAX</title>
+</head>
+<!--This is the HOME page. Header will contain a background-graphic used on all pages and the body will have a light background with slight splatter marks.-->	
+<body>
+	<header>
+		<nav><!--navigation links will be a navicon-->
+			<a id="navicon" href="#"><img src="Assets/STISL_navicon_white.png" alt=""></a>
+			<ul id="naviconList">
+			<a href="index.html"><li>home</li></a>
+			<a href="about.html"><li>about</li></a>
+			<a href="graphix.html"><li>graphix</li></a>
+			<a href="trax.html"><li>trax</li></a>
+			<a href="vidz.html"><li>vidz</li></a>
+			<!--<a href="codery.html"><li>codery</li></a>-->
+			<a href="https://www.dvidshub.net/search?q=rustique&view=grid"><li>navy</li></a>
+			<a href="https://www.stislx.com"><li>merch</li></a>
+			</ul>
+			<a href="https://www.instagram.com/stisl.one">
+			<img id="instaButton" class="socialButton" src="Assets/InstaIcon_WhiteOutline.png" alt="instaIcon">
+			</a>
+			<a href="https://www.youtube.com/channel/UCtyQOgApco-1_jHgUexeOmQ">
+			<img id="ytButton" class="socialButton" src="Assets/YouTubeIcon_WhiteOutline.png" alt="youTubeIcon">
+			</a>
+		</nav>
+	</header>
+<!--div container will be a flex box with 3 section row wrapping-->	
+<div id="flexbox">
+	<!--<section class="first"></section>-->
+	<section id="traxSection" class="second"><!--600px wide-->
+	<h3 id="traxHeader">TRAX<br>
+	<span style="font-size: 14pt; letter-spacing: 1pt; font-style: italic">Click a top image.  Switch YT playlist.<br>
+	Software: Akai, Reason, Logic, Ableton, Maschine</span>
+	</h3>
+	<div id="traxThumbBox"><!--javascript creates playlist thumbnail display--></div>
+	<div id="traxDisplay" alt="600pxImage">
+	<!--Display selected playllist as iframe embedded in 600px wide box-->
+	<iframe id="stislPlaylist" class="traxYouTubePlayer" width="600" height="315" src="https://www.youtube.com/embed/videoseries?list=PLLTJQKCxJsKtxTVW7Aa9ICeWP10dktFwB&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	</section>
+	<!--<section id="shadowSTISL" class="third"></section>-->
+</div><!--close out flexbox-->	
+<!--The footer will have a backgroud graphic used on all pages, with the copyright notice centered within-->
+	<footer>
+		<p>Copyright &copy; 2021 &middot; All Rights Reserved &middot; STISL</p>
+	</footer>
+
+</body>
+</html>
+<!---->
