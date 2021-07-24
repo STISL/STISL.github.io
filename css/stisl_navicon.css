@@ -12,7 +12,7 @@
 
 	nav ul {display: none;} 
 
-	a#navicon:active+ul, nav ul:acive {
+	a#navicon:active+ul, nav ul:active {
 		display: block;
 		margin-top: 35px;
 		margin-left: 10px;
