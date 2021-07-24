@@ -5,20 +5,12 @@
    Base Styles
    ===========
 */
-/*a#navicon {  
-	display: none;  
-}*/ 
 	a#navicon {
 		display: block;
 		margin: 5px;
-	} 
+	}
+
 	nav ul {display: none;} 
-	/*a#navicon:hover+ul, nav ul:hover {
-		display: block;
-		margin-top: 35px;
-		margin-left: 10px;
-		margin-bottom: 5px;
-	}*/
 
 	a#navicon:hover+ul, nav ul:hover {
 		display: block;

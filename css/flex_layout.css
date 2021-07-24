@@ -26,7 +26,7 @@ body {
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 	font-family: Iceberg;
-	font-size: 2vw;
+	font-size: 3vw; /* vw stands for viewport units */
 	color: #FFFFFF;
 	background-color:#323232;
 	background-image: url("../Assets/LightSplatter_BG.png");
