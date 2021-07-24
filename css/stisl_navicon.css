@@ -9,7 +9,7 @@
 		display: block;
 		margin: 5px;
 	}
-
+/* FOR HOVERING:
 	nav ul {display: none;} 
 
 	a#navicon:hover+ul, nav ul:hover {
@@ -17,7 +17,8 @@
 		margin-top: 35px;
 		margin-left: 10px;
 		margin-bottom: 5px;
-	} 
+	}
+*/
 
 nav a img {
 	width: 30px;
