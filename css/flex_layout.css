@@ -324,7 +324,7 @@ header {
 	background-image: url("../Assets/STISL_HEADER500px.png");
 	background-repeat: no-repeat;
 	background-position: center top;
-	background-size:cover;
+	background-size:contain;
 	z-index: 99;/*element with greater z-index number goes on top others*/
 	}
 }
