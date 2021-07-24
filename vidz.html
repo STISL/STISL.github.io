@@ -14,14 +14,23 @@
 <link rel="stylesheet" href="css/flex_layout.css" media="screen">
 <link rel="stylesheet" href="css/stisl_navicon.css" media="screen">
 <script src="js/vidzGallery.js" async></script>
+<script>
+	function toggleNavList (){
+		var naviconList = document.getElementById("naviconList");
+		if (naviconList.style.display === "none"){
+			naviconList.style.display = "block";
+		} 
+		else {naviconList.style.display = "none";}	
+	}
+</script>
 <title>STISL-VIDZ</title>
 </head>
 <!--This is the HOME page. Header will contain a background-graphic used on all pages and the body will have a light background with slight splatter marks.-->	
 <body>
 	<header>
 		<nav><!--navigation links will be a navicon-->
-			<a id="navicon" href="#"><img src="Assets/STISL_navicon_white.png" alt=""></a>
-			<ul id="naviconList">
+			<a id="navicon" href="#" onclick="toggleNavList()"><img src="Assets/STISL_navicon_white.png" alt=""></a>
+			<ul id="naviconList" style="display: none">
 			<a href="index.html"><li>home</li></a>
 			<a href="about.html"><li>about</li></a>
 			<a href="graphix.html"><li>graphix</li></a>
