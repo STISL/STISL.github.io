@@ -54,9 +54,10 @@ nav {
 	float: left;
 }
 
-nav ul#naviconList {
+#naviconList {
 	list-style-type: none;
-	padding-left: 5px;
+	padding-left: 10px;
+	clear: both;
 }
 
 nav a {
