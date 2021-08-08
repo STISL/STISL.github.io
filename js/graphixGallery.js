@@ -17,7 +17,7 @@ function setGallery(){
 	document.getElementById("graphixDisplay").appendChild(largeImg);
 //END CREATE FIRST LARGE IMG ELEMENT TO INSERT INTO GRAPHIXDISPLAY
 	
-//CREATE 18 THUMBNAILS FOR GRAPHIXTHUMBBOX W/ CORRESPONDING LARGE VERSIONS
+//CREATE THUMBNAILS FOR GRAPHIXTHUMBBOX W/ CORRESPONDING LARGE VERSIONS
 //ONCLICK EVENT WILL GET MATCHING LARGE VERSION OF IMG TO SWAP INTO GRAPHIXDISPLAY:
 	for (var i = 1; i < 19; i++) {
     var thumbBoxImg = document.createElement("img");
@@ -32,7 +32,7 @@ function setGallery(){
     };//close out anonymous function
     document.getElementById("graphixDisplay").appendChild(largeImg);
 	}//close out for loop
-//END CREATE 6 THUMBNAILS
+//END CREATE THUMBNAILS
 
 //CREATE EMBEDDED STYLE SHEET RULES FOR THUMBNAILS & LARGE IMAGE:
 	var thumbsStyle = document.createElement("style");
