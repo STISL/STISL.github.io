@@ -42,7 +42,7 @@ header {
 	height: 400px;/*the height of STISL_HEADER500px.png graphic is 424px*/
 	margin-left: auto;
 	margin-right: auto;
-	background-image: url("../Assets/STISL_HEADER500px.png");
+	background-image: url("../Assets/STYSL_HEADER500px.png");
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: contain;
