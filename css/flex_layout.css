@@ -71,6 +71,10 @@ nav a {
 	color: #FFFFFF;
 }
 
+nav li {
+	font-size: medium;
+}
+
 nav img {
 	float: left;
 }
