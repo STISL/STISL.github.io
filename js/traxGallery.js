@@ -12,7 +12,7 @@ function setGallery(){
 	
 //CREATE 5 THUMBNAILS FOR GRAPHIXTHUMBBOX W/ CORRESPONDING LARGE VERSIONS:
 //ONCLICK EVENT WILL GET MATCHING LARGE VERSION OF THUMBNAIL:
-	for (var i = 1; i < 7; i++){
+	for (var i = 1; i < 6; i++){
     var thumbBoxImg = document.createElement("img");
 	thumbBoxImg.setAttribute("id", "thumb_" + i);
 	thumbBoxImg.setAttribute("class", "thumbnails");
@@ -56,21 +56,21 @@ function setGallery(){
 
 function changePlaylist () {
 	document.getElementById("thumb_1").onclick = function(){
-		document.getElementById("stislPlaylist").src = "https://www.youtube.com/embed/videoseries?list=PLLTJQKCxJsKtxTVW7Aa9ICeWP10dktFwB&autoplay=1";
+		document.getElementById("styslPlaylist").src = "https://open.spotify.com/embed/album/6Ye9D0dujpJGDagHxt4CPr?utm_source=generator";
 	}
 	document.getElementById("thumb_2").onclick = function(){
-		document.getElementById("stislPlaylist").src = "https://www.youtube.com/embed/videoseries?list=PLLTJQKCxJsKv-dpxEBm6EQBifOa3oELRq&autoplay=1";
+		document.getElementById("styslPlaylist").src = "https://open.spotify.com/embed/album/1lCvuHW3xJSJk5Z5WrLZ6e?utm_source=generator";
 	}
 	document.getElementById("thumb_3").onclick = function(){
-		document.getElementById("stislPlaylist").src = "https://www.youtube.com/embed/videoseries?list=PLLTJQKCxJsKuRpBRrLFb8-oSPLNh-pPaA&autoplay=1";
+		document.getElementById("styslPlaylist").src = "https://open.spotify.com/embed/album/4rEAYutUQ3bLEC43GwUAki?utm_source=generator";
 	}
 	document.getElementById("thumb_4").onclick = function(){
-		document.getElementById("stislPlaylist").src = "https://www.youtube.com/embed/videoseries?list=PLLTJQKCxJsKtSS6TeHjl6XKRMp_aWlOq2&autoplay=1";
+		document.getElementById("styslPlaylist").src = "https://open.spotify.com/embed/album/2VEapn7W063ykvXxbgf4kR?utm_source=generator";
 	}
 	document.getElementById("thumb_5").onclick = function(){
-		document.getElementById("stislPlaylist").src = "https://www.youtube.com/embed/videoseries?list=PLLTJQKCxJsKuuO_etH1u_BMVen76sTVk5&autoplay=1";
+		document.getElementById("styslPlaylist").src = "https://open.spotify.com/embed/album/56KnZxVHthJW0jTvJb87Os?utm_source=generator";
 	}
-	document.getElementById("thumb_6").onclick = function(){
-		document.getElementById("stislPlaylist").src = "https://www.youtube.com/embed/videoseries?list=PLLTJQKCxJsKsxiU7CRXlwcCkCc-F2GOPf&autoplay=1";
-	}
+	//document.getElementById("thumb_6").onclick = function(){
+	//	document.getElementById("styslPlaylist").src = "";
+	//}
 }//close changePlaylist
