@@ -11,7 +11,6 @@ Regarding navigation, I wanted to have a hamburger menu that opens up the naviga
 I decided to use the "Iceberg" font througout for design consistency.
 I used Javascript to make thumbnails with id seclectors and onclick event listener attitibutes for graphic, music, and video elements
 that would reveal larger displays of themselves.
-Because Github does not allow server-side scripts and programs to run on the back end of their servers (unless I'm mistaken),
 I used Repl.it to upload and run Python and C++ files I also completed for some programming classes.
 These types of repositories and others of mine are also viewable.
 Thank you for any feedback!
