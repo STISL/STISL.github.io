@@ -11,7 +11,7 @@ I used Javascript to make thumbnails with id seclectors and onclick event listen
 that would reveal larger displays of themselves.
 I used Repl.it to upload and run Python and C++ files I also completed for some programming classes.
 These types of repositories and others of mine are also viewable.
-Thank you for any feedback!
+Thank you for any feedback.
 
 V/r,
 
