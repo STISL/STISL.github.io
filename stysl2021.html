@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+	AUTHOR: F. RUSTIQUE, JR. FOR STYSL
+    Date:   09 July 2021
+   -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--this line makes page compatible with Edge-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<link rel="stylesheet" href="css/reset.css" media="all">-->
+<link rel="stylesheet" href="css/flex_layout.css" media="screen">
+<!--<link rel="stylesheet" href="css/stysl_navicon.css" media="screen">-->
+<script>
+	function toggleNavList (){
+		var naviconList = document.getElementById("naviconList");
+		if (naviconList.style.display === "none"){
+			naviconList.style.display = "block";
+		} 
+		else {naviconList.style.display = "none";}	
+	}
+</script>
+<title>STYSL-HOME</title>
+</head>
+<!--This is the HOME page. Header will contain a background-graphic used on all pages and the body will have a light background with slight splatter marks.-->	
+<body>
+	<header>
+		<nav><!--navigation links will be a navicon-->
+		<a href="#" onclick="toggleNavList()"><img id="navicon" src="Assets/STISL_navicon_white.png" alt=""></a>
+		<ul id="naviconList" style="display: none">
+		<!--<a href="home.html"><li>home</li></a>-->
+		<a href="about.html"><li>about</li></a>
+		<a href="graphix.html"><li>graphix</li></a>
+		<a href="trax.html"><li>trax</li></a>
+		<a href="vidz.html"><li>vidz</li></a>
+	        <a href="https://replit.com/@STYSL"><li>codery</li></a>
+		<a href="https://www.dvidshub.net/search?q=rustique&view=grid" target="_blank" rel="noopener noreferrer"><li>navy</li></a>
+		<a href="https://www.stysl.store" target="_blank" rel="noopener noreferrer"><li>merch</li></a>
+		</ul>
+		<a href="https://www.instagram.com/stysl.one" target="_blank" rel="noopener noreferrer">
+		<img id="instaButton" class="socialButton" src="Assets/InstaIcon_WhiteOutline.png" alt="instaIcon"></a>
+		<a href="https://www.youtube.com/@stysl" target="_blank" rel="noopener noreferrer">
+		<img id="ytButton" class="socialButton" src="Assets/YouTubeIcon_WhiteOutline.png" alt="youTubeIcon"></a>
+	</nav>
+	</header>
+<!--div container will be a flex box with 3 section row wrapping-->	
+<div id="flexbox">
+	<!--<section class="first"></section>
+	<section class="second"></section>-->
+	<section id="shadowSTISL" class="third"></section>
+</div>	
+<!--The footer will have a backgroud graphic used on all pages, with the copyright notice centered within-->
+	<footer>
+		<p>Copyright &copy; 2021 &middot; All Rights Reserved &middot; STYSL</p>
+	</footer>
+</body>
+</html>
