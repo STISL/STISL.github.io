@@ -60,6 +60,9 @@ function switchVid () {
 		if(!iframeGraffoolery){
 			vidShown.style.height = "0px";
 			var vidzDisplay = document.getElementById("vidzDisplay");
+			var iframeHeader = document.createElement("h4");
+			var iframeHeaderText = document.createTextNode("Had a phase of sketching out and outlining graffiti pieces..."); // Add your text content here
+			iframeHeader.appendChild(iframeHeaderText);
 			var iframeVid = document.createElement("iframe");
 			iframeVid.setAttribute("id", "iframeGraffoolery");
 			iframeVid.setAttribute("width", "600px");
@@ -68,6 +71,7 @@ function switchVid () {
 			iframeVid.setAttribute("title", "YouTube video player");
 			iframeVid.setAttribute("frameborder", "0");
 			iframeVid.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+			vidzDisplay.appendChild(iframeHeader);
 			vidzDisplay.appendChild(iframeVid);
 		}//close out if condition
 	}
