@@ -16,6 +16,7 @@ function switchVid () {
 		if(iframeGraffoolery){
 			iframeGraffoolery.remove();
 		}
+		removeIframeHeader(); // Remove the header if it exists
 		vidShown.style.height = "315px";
 		vidShown.src = "Vidz/STISL_BlastOff.mp4";
 	}
@@ -25,6 +26,7 @@ function switchVid () {
 		if(iframeGraffoolery){
 			iframeGraffoolery.remove();
 		}
+		removeIframeHeader(); // Remove the header if it exists
 		vidShown.style.height = "315px";
 		vidShown.src = "Vidz/STISL_GIJoeReplica.mp4";
 	}
@@ -34,6 +36,7 @@ function switchVid () {
 		if(iframeGraffoolery){
 			iframeGraffoolery.remove();
 		}
+		removeIframeHeader(); // Remove the header if it exists
 		vidShown.style.height = "315px";
 		vidShown.src = "Vidz/STISL_Glitcher.mp4";
 	}
@@ -43,6 +46,7 @@ function switchVid () {
 		if(iframeGraffoolery){
 			iframeGraffoolery.remove();
 		}
+		removeIframeHeader(); // Remove the header if it exists
 		vidShown.style.height = "315px";
 		vidShown.src = "Vidz/STISL_Terminate.mp4";
 	}
@@ -51,6 +55,7 @@ function switchVid () {
 		if(iframeGraffoolery){
 			iframeGraffoolery.remove();
 		}
+		removeIframeHeader(); // Remove the header if it exists
 		vidShown.style.height = "315px";
 		vidShown.src = "Vidz/STISL_Waves.mp4";
 	}
@@ -60,7 +65,9 @@ function switchVid () {
 		if(!iframeGraffoolery){
 			vidShown.style.height = "0px";
 			var vidzDisplay = document.getElementById("vidzDisplay");
-			var iframeHeader = document.createElement("h4");
+			removeIframeHeader(); // Remove the header if it exists
+			var iframeHeader = document.createElement("h6");
+			iframeHeader.setAttribute("id", "iframeHeader");
 			var iframeHeaderText = document.createTextNode("Had a phase of sketching out and outlining graffiti pieces...");
 			iframeHeader.appendChild(iframeHeaderText);
 			var iframeVid = document.createElement("iframe");
@@ -77,6 +84,12 @@ function switchVid () {
 	}
 }//close switchVid
 
+function removeIframeHeader() {
+    var iframeHeader = document.getElementById("iframeHeader");
+    if (iframeHeader) {
+        iframeHeader.remove();
+    }
+}
 /*CREATE EMBEDDED STYLE SHEET RULES FOR THUMBNAILS & LARGE IMAGE:
 	var thumbsStyle = document.createElement("style");
 	document.head.appendChild(thumbsStyle); //add to head
