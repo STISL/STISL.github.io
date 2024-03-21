@@ -61,7 +61,7 @@ function switchVid () {
 			vidShown.style.height = "0px";
 			var vidzDisplay = document.getElementById("vidzDisplay");
 			var iframeHeader = document.createElement("h4");
-			var iframeHeaderText = document.createTextNode("Had a phase of sketching out and outlining graffiti pieces..."); // Add your text content here
+			var iframeHeaderText = document.createTextNode("Had a phase of sketching out and outlining graffiti pieces...");
 			iframeHeader.appendChild(iframeHeaderText);
 			var iframeVid = document.createElement("iframe");
 			iframeVid.setAttribute("id", "iframeGraffoolery");
